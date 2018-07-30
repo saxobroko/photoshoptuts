@@ -1,0 +1,364 @@
+
+.main-body {
+	background-image: url(./pics/gradientbg.jpg);
+	background-size: 100% 100%;
+	background: repeat-x cover center;
+	background-color: #464646;
+}
+
+/*Navigation Bar (when large)*/
+
+
+.main-nav1 {
+	background-color: #1a1d4b;
+	position: fixed;
+  	top: 0;
+  	z-index: 3;
+}
+
+
+.main-nav-links {
+	padding-top: 1em;
+}
+
+.main-nav-links li {
+	display: inline-block;
+	font-size: 2em;
+}
+
+#bootstrap-override .main-nav-links a {
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+
+@media only screen and (max-width: 1200px){
+.main-nav-links li {
+	font-size: 1.5em;
+}
+}
+
+@media only screen and (min-width: 1200px){
+.home {
+	margin-right: 2em;
+}
+}
+
+@media only screen and (max-width: 1200px){
+.home {
+	float: left;
+	margin-left: -2em;
+}
+}
+
+@media only screen and (max-width: 992px){
+.home {
+	margin-bottom: 0.5em;
+}
+}
+
+
+#bootstrap-override .home img {
+	max-width: 2em;
+}
+
+.nav-drop1 {
+	background-color: #1a1d4b;
+	border-radius: 0.1em;
+	border: none;
+	position: absolute;
+	padding: 0.5em;
+}
+
+#bootstrap-override .nav-drop1 a {
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+.nav-drop1 li {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.3em;
+	
+}
+
+
+@media only screen and (max-width: 992px) {
+	#bootstrap-override .small-hidden {
+		display: none;
+	}
+}
+
+
+/*Navigation Bar (when small and enabled)*/
+
+@media only screen and (min-width: 992px) {
+	#bootstrap-override .big-hidden {
+		display: none;
+	}
+}
+
+
+#bootstrap-override .main-nav2 {
+	position: fixed;
+  	top: 64px;
+  	z-index: 2;
+	background-color: #1a1d4b;
+	padding-top: 1em;
+	min-width: 100%;
+	text-align: right;
+}
+
+
+#bootstrap-override .nav-button {
+	background-color: #1a1d4b;;
+	border: none;
+	float: right;
+	clear: right;
+	width: 100px;
+}
+
+#bootstrap-override .nav-button img {
+	max-width: 40%;
+	float: right;
+	cursor: pointer;
+	margin-top: 0.25em;
+}
+
+
+.nav-button-drop {
+	float: right;
+	font-size: 1rem;
+}
+
+
+.nav-drop2 {
+	background-color: #85c0fa;
+	margin-left: 1em;
+	font-size: 1rem;
+}
+
+
+.main-nav2 li, .nav-drop2 li {
+	display: block;
+	font-size: 1.5em;
+}
+
+#bootstrap-override .main-nav2 a{ 
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+#bootstrap-override .reveal-nav-drop2, #bootstrap-override .reveal-nav-drop1 {
+	cursor: pointer;
+}
+
+#bootstrap-override .nav-drop2 a {
+	text-decoration: none;
+	color: #1a1d4b;
+}
+
+
+/*Intro*/
+
+#bootstrap-override .skip-link a{
+	text-decoration: none;
+	color: #858585;
+}
+
+.youtube-vid {
+	margin-top: 5em;
+}
+
+
+#bootstrap-override #heading1{
+	padding: 0.25em;
+	color: #1a1d4b;
+	background-color: #85c0fa;
+	border-radius: 0.1em;
+	margin-top: 2em;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px){
+#bootstrap-override #heading1 {
+	margin-top: 3em;
+}
+}
+
+@media only screen and (max-width: 768px){
+#bootstrap-override .heading {
+	font-size: 3rem;
+}
+}
+
+@media only screen and (min-width: 768px){
+#bootstrap-override .heading {
+	font-size: 5rem;
+}
+}
+
+@media only screen and (min-width: 1200px){
+#bootstrap-override .heading {
+	font-size: 5rem;
+}
+}
+
+#heading2{
+	padding: 0.25em;
+	color: #1a1d4b;
+	background-color: #85c0fa;
+	border-radius: 0.1em;
+	margin-top: 1em;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px){
+#bootstrap-override #heading2 {
+	margin-top: 1.5em;
+}
+}
+
+#bootstrap-override .intro {
+	color: white;
+	border-radius: 0.2em;
+	padding: 0.5em 0 0.5em 1em;
+	margin-top: 2em;
+}
+
+
+@media only screen and (min-width: 768px){
+#bootstrap-override .intro {
+	font-size: 1.25rem;
+}
+}
+
+
+#bootstrap-override .below-button {
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	background-color: #424242;
+	border: solid 3px #464646;
+	cursor: pointer;
+}
+
+#bootstrap-override .below-button button {
+	background-color: #424242;;
+	border: none;
+	margin-top: 0.1em;
+	cursor: pointer;
+}
+
+#bootstrap-override .below-button img {
+	margin-top: -2em;
+	border: none;
+	margin-top: 0.1em;
+	cursor: pointer;
+	max-width: 50%;
+}
+
+@media only screen and (min-width: 992px){
+	#bootstrap-override .below-button {
+		padding: 0.5em;
+	}
+	#bootstrap-override .below-button img {
+		max-width: 80%;
+	}
+}
+
+@media only screen and (min-width: 1200px){
+	#bootstrap-override .below-button {
+		padding: 1em;
+	}
+	#bootstrap-override .below-button img {
+		max-width: 100%;
+	}
+}
+
+/*Step Cards*/
+
+.steps-container {
+	margin-top: 3em;
+}
+
+
+.step-card {
+	padding: 1em 2em 1em 2em;
+}
+
+#bootstrap-override .step-card img {
+	max-width: 100%;
+	margin: 0;
+	padding-left: : 1em;
+	padding-top: 2em;
+}
+
+
+#bootstrap-override .more-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 1em;
+	background-color: #85c0fa;
+}
+
+
+#bootstrap-override .step-title {
+	font-size: 1.5rem;
+}
+
+#bootstrap-override .next-button {
+	float: right;
+	margin-right: 1em;
+	overflow: auto;
+	padding: 1em;
+}
+
+#bootstrap-override .next-button button {
+	background-color: #1a1d4b;;
+	border: none;
+	cursor: pointer;
+}
+
+#bootstrap-override .next-button img {
+	margin-top: -2em;
+	border: none;
+}
+
+#bootstrap-override .instructions {
+	background-color: #85c0fa; 
+	margin-top: -1em;
+	padding-bottom: 1em;
+	padding-right: 2em;
+}
+
+#bootstrap-override .more-info p, #bootstrap-override .instructions p {
+	margin-left: 2em;
+}
+
+
+
+/* Footer */
+
+.footer {
+	border-top: solid white 1px;
+	margin-top: 3em;
+	padding-top: 3em;
+}
+
+#bootstrap-override .foot-img {
+	overflow: hidden;
+	margin-right: 1em;
+	
+}
+
+#photoshop {
+	max-width: 30%;
+}
+
+ #youtube {
+	max-width: 40%;
+	border-radius: 0.75em;
+	margin-left: 2em;
+}

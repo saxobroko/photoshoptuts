@@ -1,0 +1,299 @@
+
+.main-body {
+	background-image: url(./pics/gradientbg.jpg);
+	background: repeat-x cover center;
+	background-color: #464646;
+}
+
+/*Navigation Bar (when large)*/
+
+
+.main-nav1 {
+	background-color: #1a1d4b;
+	position: fixed;
+  	top: 0;
+  	z-index: 3;
+}
+
+
+.main-nav-links {
+	padding-top: 1em;
+}
+
+.main-nav-links li {
+	display: inline-block;
+	font-size: 2em;
+}
+
+#bootstrap-override .main-nav-links a {
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+
+@media only screen and (max-width: 1200px){
+.main-nav-links li {
+	font-size: 1.5em;
+}
+}
+
+@media only screen and (min-width: 1200px){
+.home {
+	margin-right: 2em;
+}
+}
+
+@media only screen and (max-width: 1200px){
+.home {
+	float: left;
+	margin-left: -2em;
+}
+}
+
+@media only screen and (max-width: 992px){
+.home {
+	margin-bottom: 0.5em;
+}
+}
+
+
+
+#bootstrap-override .home img {
+	max-width: 2em;
+}
+
+.nav-drop1 {
+	background-color: #1a1d4b;
+	border-radius: 0.1em;
+	border: none;
+	position: absolute;
+	padding: 0.5em;
+}
+
+#bootstrap-override .nav-drop1 a {
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+.nav-drop1 li {
+	display: block;
+	font-size: 1.5rem;
+	padding: 0.3em;
+	
+}
+
+
+@media only screen and (max-width: 992px) {
+	#bootstrap-override .small-hidden {
+		display: none;
+	}
+}
+
+
+/*Navigation Bar (when small and enabled)*/
+
+@media only screen and (min-width: 992px) {
+	#bootstrap-override .big-hidden {
+		display: none;
+	}
+}
+
+
+#bootstrap-override .main-nav2 {
+	position: fixed;
+  	top: 64px;
+  	z-index: 3;
+	background-color: #1a1d4b;
+	padding-top: 1em;
+	margin-top: 0;
+	min-width: 100%;
+	text-align: right;
+}
+
+
+#bootstrap-override .nav-button {
+	background-color: #1a1d4b;;
+	border: none;
+	float: right;
+	clear: right;
+	width: 100px;
+}
+
+#bootstrap-override .nav-button img {
+	max-width: 40%;
+	float: right;
+	cursor: pointer;
+	margin-top: 0.25em;
+}
+
+
+.nav-button-drop {
+	float: right;
+	font-size: 1rem;
+
+}
+
+
+.nav-drop2 {
+	background-color: #85c0fa;
+	margin-left: 1em;
+	font-size: 1rem;
+}
+
+
+.main-nav2 li, .nav-drop2 li {
+	display: block;
+	font-size: 1.5em;
+}
+
+#bootstrap-override .main-nav2 a{ 
+	text-decoration: none;
+	color: #85c0fa;
+}
+
+#bootstrap-override .reveal-nav-drop2, .reveal-nav-drop1 {
+	cursor: pointer;
+}
+
+#bootstrap-override .nav-drop2 a {
+	text-decoration: none;
+	color: #1a1d4b;
+}
+
+
+/*Jumbotron*/
+
+#jumbotronpic {
+	background-image: url(./pics/cutout-example4a.jpg);
+	background-size: cover;
+	background-position: center;
+	margin-top: 9em;
+	margin-bottom: 5em;
+}
+
+.jumbotron {
+	height: 42em;
+	border-radius: 0;
+}
+
+@media only screen and (max-width: 768px){
+
+.jumbotron {
+	max-height: 25em;
+	border-radius: 0;
+}
+
+}
+
+#bootstrap-override .heading{
+	padding: 0.25em;
+	color: #1a1d4b;
+	background-color: #85c0fa;
+	border-radius: 0.1em;
+	margin-top: 3em;
+	overflow: hidden;
+}
+
+@media only screen and (min-width: 1200px){
+#bootstrap-override .heading{
+margin-top: 2em;
+}
+}
+
+@media only screen and (max-width: 768px){
+#bootstrap-override .heading {
+	font-size: 3rem;
+}
+}
+
+@media only screen and (min-width: 768px){
+#bootstrap-override .heading {
+	font-size: 5rem;
+}
+}
+
+@media only screen and (min-width: 1200px){
+#bootstrap-override .heading {
+	font-size: 6rem;
+}
+}
+
+
+
+@media only screen and (max-width: 768px){
+#bootstrap-override .jumbotron {
+	height: 30em;
+	border-radius: 0;
+}
+}
+
+#bootstrap-override .intro {
+	color: white;
+	background-color: #464646;
+	border-radius: 0.2em;
+	padding: 0.5em 0 0.5em 1em;
+	margin-top: 1em;
+}
+
+
+@media only screen and (min-width: 768px){
+#bootstrap-override .intro {
+	font-size: 1.25rem;
+}
+}
+
+
+/*Form*/
+
+#bootstrap-override #contact-form input, #bootstrap-override #contact-form textarea {
+	background-color: #85c0fa;
+	border: none;
+}
+
+
+#bootstrap-override #contact-form label {
+	color: white;
+}
+
+#bootstrap-override #contact-form p {
+	color: #858585;
+}
+
+#bootstrap-override #contact-form a {
+	text-decoration: none;
+	color: #858585;
+}
+
+#bootstrap-override #contact-form button{
+	color: #85c0fa;
+	background-color: #1a1d4b;
+	border: none;
+	margin-bottom: 5em;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+	border-top: solid white 1px;
+	margin-top: 3em;
+	padding-top: 3em;
+}
+
+#bootstrap-override .foot-img {
+	overflow: hidden;
+	margin-right: 1em;
+	
+}
+
+#photoshop {
+	max-width: 30%;
+}
+
+ #youtube {
+	max-width: 40%;
+	border-radius: 0.75em;
+	margin-left: 2em;
+}
