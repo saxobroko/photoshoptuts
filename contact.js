@@ -3,6 +3,7 @@ $(document).ready(function() {
   //////////////////////////////////////////////////////////////////////////////////////////////////
 
   var $navbutton = $('.nav-button');
+  var $navButtonImg = $('.nav-button img');
   var $navDrop1 = $('.nav-drop1');
   var $revealNavDrop1 = $('.reveal-nav-drop1');
   var $navDrop2 = $('.nav-drop2');
@@ -10,14 +11,23 @@ $(document).ready(function() {
   var $mainNavLinks = $('.main-nav-links a');
   var $navDropLinks = $('.nav-drop1 a');
   var $mainNav2 = $('.main-nav2')
+  let iSeeNavMenu = false;
 
 //Nav button toggle on small screens
 
   $mainNav2.hide();  
   $navbutton.on('click', () =>{
     $mainNav2.slideToggle();
+    if (!iSeeNavMenu) {
+      $navButtonImg.attr('src','./pics/simplenavicon2.jpg');
+      iSeeNavMenu = true;
+    } else {
+      $navButtonImg.attr('src','./pics/simplenavicon.jpg');
+      iSeeNavMenu = false;
+    };
     return false;
   });
+
 
 
 //Dropdown option on navbar link 1 (large)

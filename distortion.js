@@ -3,6 +3,7 @@ $(document).ready(() => {
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
   var $navbutton = $('.nav-button');
+  var $navButtonImg = $('.nav-button img');
   var $navDrop1 = $('.nav-drop1');
   var $revealNavDrop1 = $('.reveal-nav-drop1');
   var $navDrop2 = $('.nav-drop2');
@@ -10,12 +11,20 @@ $(document).ready(() => {
   var $mainNavLinks = $('.main-nav-links a');
   var $navDropLinks = $('.nav-drop1 a');
   var $mainNav2 = $('.main-nav2')
-
+  let iSeeNavMenu = false;
+ 
 //Nav button toggle on small screens
 
   $mainNav2.hide();  
   $navbutton.on('click', () =>{
     $mainNav2.slideToggle();
+    if (!iSeeNavMenu) {
+      $navButtonImg.attr('src','./pics/simplenavicon2.jpg');
+      iSeeNavMenu = true;
+    } else {
+      $navButtonImg.attr('src','./pics/simplenavicon.jpg');
+      iSeeNavMenu = false;
+    };
     return false;
   });
 
@@ -61,26 +70,45 @@ $(document).ready(() => {
 
   var $instructions = $('.instructions');
   var $nextButton = $('.next-button');
+  let iSeeStep= false;
 
 
   $instructions.hide();
   $nextButton.on('click', event => {
    $(event.currentTarget).closest('.step-card').find('.instructions').slideToggle(300);
+   if (!iSeeStep) {
+    $(event.currentTarget).addClass('rotate');
+    iSeeStep = true;
+  } else {
+    $(event.currentTarget).removeClass('rotate');
+    iSeeStep = false;
+  }
   });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 var $stepsContainer = $('.steps-container');
-var $belowButton = $('.below-button');
-var $errorButton = $('#errorbutton');
+var $belowButton = $('#jump-to-second');
+let iSeeAllSteps = false;
 
 
 $stepsContainer.hide();
   $belowButton.on('click', event => {
    $(event.currentTarget).closest('.tutorial-container').find('.steps-container').slideToggle(300);
+   if (!iSeeAllSteps) {
+    $(event.currentTarget).addClass('rotate');
+    iSeeAllSteps = true;
+  } else {
+    $(event.currentTarget).removeClass('rotate');
+    iSeeAllSteps = false;
+  }
   });
 
+
+
+
+ var $errorButton = $('#errorbutton'); 
  $errorButton.on('click', event => {
     alert("There are no obvious steps to glitch photography! Try to play around with things such as- \n\n*Layer masks \n*Channels \n*Curves with channels \n*Over saturating and inverting colour \n*Rectangle marquees \n*Layer order and opacity \n*Filters- including pixelate- mosaic \n\nHave fun!!!")
   });
